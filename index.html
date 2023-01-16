@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Daelen's Lab 2 TGIS504</title>
-          <!-- css block -->
-        <!-- load in styles.css -->
-        <link rel="stylesheet" type"text/css" href="styles.css">
-        <!-- load in leaflet css -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-        crossorigin=""/>
+<head>
+	<title>Daelen's Lab 2 TGIS504</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!--These settings are ideal for full-screen mobile use-->
+	<!-- CSS BLock  -->
+	<link rel="stylesheet" href="styles.css"/>
+	<!-- mapbox CSS  -->
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">\
 
-        <!-- JS block  -->
-        <!-- load in leaflet js -->
-        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-        crossorigin=""></script>
-    </head>
-    <body>
-        <div id="map"></div>
-        <script src="scripts.js"></script>
-    </body>
+	<!-- js Block  -->
+    <!-- inputing the Mapbox js -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+	<!-- turf js  -->
+	<script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
 
+</head>
+<body>
+	<div id='map'></div>
+	<!-- Loads in the Libraries and hospitals js files -->
+	<script src="data/libraries.js"></script>
+	<script src="data/hospitals.js"></script>
+	<!-- loads in scripts.js  -->
+	<script src="scripts.js"></script>
+</body>
 </html>
